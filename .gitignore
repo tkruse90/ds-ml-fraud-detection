@@ -139,3 +139,13 @@ dmypy.json
 # nbdime Stuff
 .gitattributes
 
+
+# Die entpackten CSVs und abgeleitete Dateien bleiben lokal.
+data/*
+!data/.gitkeep
+!data/train.zip
+!data/fd_split.csv
+
+# Gespeicherte Modelle werden von den Notebooks erzeugt und nicht hochgeladen
+models/*
+!models/.gitkeep

@@ -1,77 +1,77 @@
-# Set Up a Kanban Board on GitHub
+# Ein Kanban-Board auf GitHub einrichten
 
-Use a GitHub project board to plan your work and track the milestones from [01_assignment.md](01_assignment.md). Set this up together as a team at the start of the project.
+Nutzt ein GitHub-Projektboard, um eure Arbeit zu planen und die Meilensteine aus [01_assignment.md](01_assignment.md) zu verfolgen. Richtet es zu Beginn des Projekts gemeinsam als Team ein.
 
-The setup has six stages: create your repository, create the board, give your team access, add tasks, set up milestones, then connect the two. Work through them in order.
+Die Einrichtung hat sechs Stufen: Repository erstellen, Board erstellen, dem Team Zugriff geben, Aufgaben hinzufügen, Meilensteine anlegen und dann beides verbinden. Arbeitet sie der Reihe nach durch.
 
-## 1. Create Your Project Repository
+## 1. Projekt-Repository erstellen
 
-1. Click on "Use this template" (the blue button).
-   ![Use this template button.](./assets/step_1a_new.png)
+1. Klicke auf „Use this template“ (der blaue Button).
+   ![Button „Use this template“.](./assets/step_1a_new.png)
 
-2. Create a new repository with a relevant name. The owner should be your own account.
-   ![Create a new repository.](./assets/step_2_new.png)
+2. Erstelle ein neues Repository mit einem passenden Namen. Owner sollte dein eigenes Konto sein.
+   ![Ein neues Repository erstellen.](./assets/step_2_new.png)
 
-## 2. Create the Kanban Board
+## 2. Das Kanban-Board erstellen
 
-1. In your new repository, go to "Projects" and click "Link a project" (the blue button). If you have not created a project yet, use the arrow navigation to create one on your profile. You can add this project to your repository at the end.
-   ![Link a project.](./assets/add_project_new.png)
+1. Gehe in deinem neuen Repository zu „Projects“ und klicke auf „Link a project“ (der blaue Button). Wenn du noch kein Projekt angelegt hast, erstelle über die Pfeil-Navigation eines in deinem Profil. Du kannst dieses Projekt am Ende zu deinem Repository hinzufügen.
+   ![Ein Projekt verknüpfen.](./assets/add_project_new.png)
 
-2. You will be taken to your profile's projects and shown a "create project" window. Choose the "Board" view, not the "Table" view.
-   ![Choose the board view.](./assets/choose_board.png)
+2. Du landest bei den Projekten deines Profils und siehst ein Fenster „create project“. Wähle die Ansicht „Board“, nicht „Table“.
+   ![Die Board-Ansicht wählen.](./assets/choose_board.png)
 
-3. Change the name of your board to match your chosen ML project, then click the "Create project" blue button. You have now created a Kanban board.
-   ![Create the project.](./assets/create_project_new.png)
+3. Ändere den Namen deines Boards passend zu eurem gewählten ML-Projekt und klicke dann auf den blauen Button „Create project“. Damit hast du ein Kanban-Board erstellt.
+   ![Das Projekt erstellen.](./assets/create_project_new.png)
 
-## 3. Give Your Team Access
+## 3. Dem Team Zugriff geben
 
-1. Click the three dots at the top right of the board, then go to "Settings".
-   ![Open board settings.](./assets/kanban_settings.png)
+1. Klicke oben rechts im Board auf die drei Punkte und gehe zu „Settings“.
+   ![Board-Einstellungen öffnen.](./assets/kanban_settings.png)
 
-2. Click "Manage access". Add your teammates by searching for their GitHub handle. Change their role from "Write" to "Admin", then click the blue "Invite" button. Repeat for all team members.
-   ![Manage access.](./assets/team_access_new.png)
+2. Klicke auf „Manage access“. Füge deine Teammitglieder hinzu, indem du nach ihrem GitHub-Namen suchst. Ändere ihre Rolle von „Write“ auf „Admin“ und klicke dann auf den blauen Button „Invite“. Wiederhole das für alle Teammitglieder.
+   ![Zugriff verwalten.](./assets/team_access_new.png)
 
-## 4. Add Tasks as Issues
+## 4. Aufgaben als Issues hinzufügen
 
-1. Go back to the Kanban board and, at the bottom, add action items with relevant names, for example "load data" or "get statistics".
-   ![Add an action item.](./assets/load_data_item.png)
+1. Gehe zurück zum Kanban-Board und füge unten Aufgaben mit passenden Namen hinzu, zum Beispiel „load data“ oder „get statistics“.
+   ![Eine Aufgabe hinzufügen.](./assets/load_data_item.png)
 
-2. Convert an added item to an issue by clicking the three dots on that item.
-   ![Convert to issue.](./assets/convert_to_issue.png)
+2. Wandle eine hinzugefügte Aufgabe in ein Issue um, indem du auf die drei Punkte bei dieser Aufgabe klickst.
+   ![In ein Issue umwandeln.](./assets/convert_to_issue.png)
 
-3. Select the repository you created so the issue is added to it (for example "my-project-name").
-   ![Select the repository.](./assets/select_repo.png)
+3. Wähle das Repository aus, das du erstellt hast, damit das Issue dort angelegt wird (zum Beispiel „my-project-name“).
+   ![Das Repository auswählen.](./assets/select_repo.png)
 
-## 5. Set Up Milestones
+## 5. Meilensteine anlegen
 
-1. In your project repository, go to "Issues", then "Milestones".
-   ![Go to milestones.](./assets/to_milestones.png)
+1. Gehe in deinem Projekt-Repository zu „Issues“ und dann zu „Milestones“.
+   ![Zu den Meilensteinen.](./assets/to_milestones.png)
 
-2. Click "New milestone".
+2. Klicke auf „New milestone“.
 
-3. Give the milestone a due date and a description, following the example provided by the coaches. The description should cover:
+3. Gib dem Meilenstein ein Fälligkeitsdatum und eine Beschreibung, nach dem Beispiel der Coaches. Die Beschreibung sollte enthalten:
 
-   A) What needs to be completed to be done with the milestone.
+   A) Was erledigt sein muss, damit der Meilenstein abgeschlossen ist.
 
-   B) The definition of done: what your result looks like when the milestone is complete (check the provided format).
-   ![New milestone.](./assets/new_milestone.png)
+   B) Die Definition of Done: wie euer Ergebnis aussieht, wenn der Meilenstein abgeschlossen ist (siehe das vorgegebene Format).
+   ![Neuer Meilenstein.](./assets/new_milestone.png)
 
-## 6. Link Issues to Milestones and People
+## 6. Issues mit Meilensteinen und Personen verknüpfen
 
-1. Go to "Issues".
+1. Gehe zu „Issues“.
 
-2. Assign issues to milestones.
-   ![Assign issues to milestones.](./assets/milestone_to_issue_new.png)
+2. Ordne die Issues Meilensteinen zu.
+   ![Issues Meilensteinen zuordnen.](./assets/milestone_to_issue_new.png)
 
-3. Give each issue assignees (the people who will work on the task).
-   ![Assign people to an issue.](./assets/milestone_to_someone.png)
+3. Gib jedem Issue Assignees (die Personen, die an der Aufgabe arbeiten).
+   ![Personen einem Issue zuordnen.](./assets/milestone_to_someone.png)
 
-## Optional: Add Workflows
+## Optional: Workflows hinzufügen
 
-Workflows can help keep your Kanban board automatically on track.
+Workflows können helfen, euer Kanban-Board automatisch auf dem aktuellen Stand zu halten.
 
-1. Select the project you created in the steps above.
-2. Click the three dots at the far right of the board.
-3. Select "Workflows" as the first option.
-4. Activate the ones you feel are useful for your project.
-5. Go back to your project repository.
+1. Wähle das Projekt aus, das du in den Schritten oben erstellt hast.
+2. Klicke ganz rechts im Board auf die drei Punkte.
+3. Wähle als erste Option „Workflows“.
+4. Aktiviere die, die du für euer Projekt sinnvoll findest.
+5. Gehe zurück zu deinem Projekt-Repository.
