@@ -1,101 +1,101 @@
-# Machine Learning Project Template
+# Vorlage für ein Machine-Learning-Projekt
 
-A starting point for your team machine learning project. The repository ships an example notebook that trains a simple model with minimal cleaning and feature selection. Use it as scaffolding, then build your own project on top of it.
+Ein Ausgangspunkt für euer Team-Projekt im Machine Learning. Das Repository enthält ein Beispiel-Notebook, das mit minimaler Bereinigung und Feature-Auswahl ein einfaches Modell trainiert. Nutze es als Gerüst und baue darauf dein eigenes Projekt auf.
 
-The example uses the [coffee quality dataset](https://github.com/jldbc/coffee-quality-database).
+Das Beispiel verwendet den [Coffee-Quality-Datensatz](https://github.com/jldbc/coffee-quality-database).
 
-## Learning Objectives
+## Lernziele
 
-By the end of this repository, you should be able to:
+Am Ende dieses Repositorys solltest du Folgendes können:
 
-- Work on a data science project as a team, sharing the work across the data science lifecycle.
-- Frame a business problem as a machine learning task and choose a performance metric that fits the value you want to create.
-- Build a baseline model, then iterate with error analysis and at least three algorithms (including cross validation and hyperparameter tuning).
-- Communicate your findings and recommendations to a non-technical audience in a short presentation.
+- Im Team an einem Data-Science-Projekt arbeiten und die Arbeit über den gesamten Data-Science-Lebenszyklus aufteilen.
+- Ein Geschäftsproblem als Machine-Learning-Aufgabe formulieren und eine Bewertungsmetrik wählen, die zum angestrebten Nutzen passt.
+- Ein Baseline-Modell bauen und es dann mit Fehleranalyse und mindestens drei Algorithmen weiterentwickeln (einschließlich Cross-Validation und Hyperparameter-Tuning).
+- Deine Ergebnisse und Empfehlungen in einer kurzen Präsentation einem nicht-technischen Publikum vermitteln.
 
-## Learning Path
+## Lernpfad
 
-Your project follows the data science lifecycle:
+Dein Projekt folgt dem Data-Science-Lebenszyklus:
 
 ```mermaid
 flowchart LR
-    A[Data] --> B[EDA]
-    B --> C[Baseline model]
-    C --> D[Error analysis and iteration]
-    D --> E[Stakeholder presentation]
+    A[Daten] --> B[EDA]
+    B --> C[Baseline-Modell]
+    C --> D[Fehleranalyse und Iteration]
+    D --> E[Präsentation für Stakeholder]
 ```
 
-Start with the assignment, set up your board, then use the example notebook as a reference:
+Beginne mit der Aufgabenstellung, richte dein Board ein und nutze dann das Beispiel-Notebook als Vorlage:
 
-| File / Folder | Description |
+| Datei / Ordner | Beschreibung |
 |---|---|
-| [**Assignment**](01_assignment.md) | The project brief: timeline, milestones, project options, deliverables, and things to think about. |
-| [**Kanban Board**](02_kanban_board.md) | Step-by-step setup of a GitHub project board to plan and track your work. |
-| [**EDA and Modeling**](03_eda-and-modeling.ipynb) | Worked example of selecting features, doing minimal cleaning, and training a simple model. |
+| [**Aufgabenstellung**](01_assignment.md) | Das Projekt-Briefing: Zeitplan, Meilensteine, Projektoptionen, Abgaben und Punkte, über die du nachdenken solltest. |
+| [**Kanban-Board**](02_kanban_board.md) | Schritt-für-Schritt-Einrichtung eines GitHub-Projektboards, um eure Arbeit zu planen und zu verfolgen. |
+| [**EDA und Modellierung**](03_eda-and-modeling.ipynb) | Ausgearbeitetes Beispiel: Features auswählen, minimal bereinigen und ein einfaches Modell trainieren. |
 
-### Additional Folders and Files
+### Weitere Ordner und Dateien
 
-| File / Folder | Description |
+| Datei / Ordner | Beschreibung |
 |---|---|
-| [**Data**](data/) | Where your datasets go. |
-| [**Models**](models/) | Where trained models are saved. |
-| [**Assets**](assets/) | Screenshots used in the Kanban board guide. |
-| [**pyproject.toml**](pyproject.toml) | Project configuration and dependencies. |
-| [**uv.lock**](uv.lock) | Dependency lock file. |
+| [**Daten**](data/) | Hier kommen eure Datensätze hin. |
+| [**Modelle**](models/) | Hier werden trainierte Modelle gespeichert. |
+| [**Assets**](assets/) | Screenshots für die Anleitung zum Kanban-Board. |
+| [**pyproject.toml**](pyproject.toml) | Projektkonfiguration und Abhängigkeiten. |
+| [**uv.lock**](uv.lock) | Lock-Datei mit den genauen Paketversionen. |
 
-## Setup
+## Einrichtung
 
-Use [uv](https://docs.astral.sh/uv/getting-started/installation/) 0.13.5 or newer
-and Python 3.13.17 or a newer 3.13 patch release, as defined in
-[`.python-version`](.python-version).
+Verwende [uv](https://docs.astral.sh/uv/getting-started/installation/) 0.13.5 oder neuer
+und Python 3.13.17 oder eine neuere 3.13-Patch-Version, wie in
+[`.python-version`](.python-version) festgelegt.
 
 > [!NOTE]
-> Throughout these steps, text in angle brackets like `<repo-name>` is a **placeholder**. Replace it, including the `< >` brackets, with your own value. For example, `cd <repo-name>` becomes `cd my-ml-project`.
+> In diesen Schritten ist Text in spitzen Klammern wie `<repo-name>` ein **Platzhalter**. Ersetze ihn, samt den Klammern `< >`, durch deinen eigenen Wert. Aus `cd <repo-name>` wird zum Beispiel `cd my-ml-project`.
 
-### 1. Create the Repository from the Template
+### 1. Repository aus der Vorlage erstellen
 
-Click **Use this template** on GitHub.
+Klicke auf GitHub auf **Use this template**.
 
-When creating the repository:
+Beim Erstellen des Repositorys:
 
-- Set yourself as the **Owner**
-- Choose a repository name
-- Disable **Include all branches**
-- Click **Create repository**
+- Trag dich selbst als **Owner** ein
+- Wähle einen Namen für das Repository
+- Deaktiviere **Include all branches**
+- Klicke auf **Create repository**
 
 > [!IMPORTANT]
-> If you are working in pairs or groups, only **one person** should complete this step.
+> Wenn ihr zu zweit oder in Gruppen arbeitet, erledigt diesen Schritt nur **eine Person**.
 
 ---
 
-### 2. Add Collaborators (Pairs/Groups Only)
+### 2. Mitwirkende hinzufügen (nur bei Paaren/Gruppen)
 
-If working with teammates:
+Wenn du mit anderen zusammenarbeitest:
 
-1. Open the repository on GitHub
-2. Go to **Settings → Collaborators**
-3. Add your teammates as collaborators
-4. Share the repository link with your team
+1. Öffne das Repository auf GitHub
+2. Gehe zu **Settings → Collaborators**
+3. Füge deine Teammitglieder als Collaborators hinzu
+4. Teile den Link zum Repository mit deinem Team
 
-Teammates should accept the invitation before continuing.
+Die Teammitglieder sollten die Einladung annehmen, bevor es weitergeht.
 
 ---
 
-### 3. Clone the Repository
+### 3. Repository klonen
 
-Copy the SSH URL from the **Code** button on GitHub, then run:
+Kopiere die SSH-URL über den Button **Code** auf GitHub und führe dann aus:
 
 ```bash
-git clone <copied-ssh-url>
+git clone <kopierte-ssh-url>
 ```
 
-The copied SSH URL will look like `git@github.com:<your-username>/<repo-name>.git`.
+Die kopierte SSH-URL sieht so aus: `git@github.com:<dein-benutzername>/<repo-name>.git`.
 
 ---
 
-### 4. Move into the Project Folder and Install Dependencies
+### 4. In den Projektordner wechseln und Abhängigkeiten installieren
 
-This installs all dependencies and creates a virtual environment in (`.venv/`).
+Das installiert alle Abhängigkeiten und legt eine virtuelle Umgebung in `.venv/` an.
 
 ```bash
 cd <repo-name>
@@ -103,40 +103,40 @@ uv sync
 ```
 
 > [!TIP]
-> This is your own project, so you will add libraries as you go. Install a new package with `uv add <package>` (for example `uv add xgboost`). It updates `pyproject.toml` and `uv.lock` for the whole team.
+> Das ist euer eigenes Projekt, ihr werdet also nach und nach Bibliotheken hinzufügen. Ein neues Paket installierst du mit `uv add <paket>` (zum Beispiel `uv add xgboost`). Das aktualisiert `pyproject.toml` und `uv.lock` für das ganze Team.
 
 ---
 
-### 5. Open the Notebook
+### 5. Notebook öffnen
 
 > [!NOTE]
-> Make sure you open VS Code from the project root so it automatically detects the environment created by `uv sync`.
+> Öffne VS Code unbedingt im Hauptordner des Projekts, damit es die von `uv sync` erstellte Umgebung automatisch erkennt.
 
-Launch VS Code in the project root folder:
+Starte VS Code im Hauptordner des Projekts:
 
 ```bash
 code .
 ```
 
-Then open `03_eda-and-modeling.ipynb` and select the Python environment created by `uv sync` as the kernel.
+Öffne dann `03_eda-and-modeling.ipynb` und wähle die von `uv sync` erstellte Python-Umgebung als Kernel.
 
-## Handling Merge Conflicts in Notebooks
+## Merge-Konflikte in Notebooks lösen
 
-When working in a team, `.ipynb` files can cause messy merge conflicts because they are JSON based. The `nbdime` tool makes this easier, and `uvx` runs it without adding it to your project dependencies.
+Bei der Arbeit im Team können `.ipynb`-Dateien unübersichtliche Merge-Konflikte verursachen, weil sie auf JSON basieren. Das Tool `nbdime` macht das einfacher, und `uvx` führt es aus, ohne es zu den Abhängigkeiten deines Projekts hinzuzufügen.
 
-Enable the git integration once:
+Aktiviere die Git-Integration einmalig:
 
 ```bash
 uvx nbdime config-git --enable
 ```
 
-When a conflict happens, open the merge tool:
+Wenn ein Konflikt auftritt, öffne das Merge-Tool:
 
 ```bash
 uvx nbdime mergetool
 ```
 
-A web interface opens showing both notebook versions side by side. Choose what to keep, save, and close the tool, then:
+Es öffnet sich eine Weboberfläche, die beide Notebook-Versionen nebeneinander zeigt. Wähle aus, was du behalten willst, speichere, schließe das Tool und führe dann aus:
 
 ```bash
 git add your_notebook.ipynb
@@ -144,13 +144,15 @@ git commit -m "Resolve notebook conflict"
 ```
 
 > [!TIP]
-> When working with notebooks, it's a good idea to clear outputs before committing to reduce the chances of conflicts. You can do this in VS Code with the command palette: `Notebook: Clear All Outputs`.
+> Bei der Arbeit mit Notebooks ist es sinnvoll, vor dem Committen die Ausgaben zu löschen. So sinkt die Gefahr von Konflikten. In VS Code geht das über die Befehlspalette: `Notebook: Clear All Outputs`.
 
-## References & Further Reading
+## Quellen und weiterführende Literatur
 
-- [**scikit-learn Documentation**](https://scikit-learn.org/stable/): the library used for modelling, with user guides and examples.
-- [**Choosing the Right Estimator**](https://scikit-learn.org/stable/machine_learning_map.html): a visual map for picking a model based on your problem and data.
-- [**PEP 8 Style Guide for Python Code**](https://peps.python.org/pep-0008/): the style your notebook should follow.
-- [**Jupyter Notebooks in VS Code**](https://code.visualstudio.com/docs/datascience/jupyter-notebooks): how to run notebooks and pick a kernel in VS Code.
-- [**uv Documentation**](https://docs.astral.sh/uv/): the package manager that handles Python and dependencies for this repo.
-- [**Zindi Competitions**](https://zindi.africa/competitions): real-world challenges, several of which are listed as project options in the assignment.
+Die externen Ressourcen sind auf Englisch.
+
+- [**scikit-learn-Dokumentation**](https://scikit-learn.org/stable/): die Bibliothek für die Modellierung, mit Benutzerhandbüchern und Beispielen.
+- [**Choosing the Right Estimator**](https://scikit-learn.org/stable/machine_learning_map.html): eine grafische Übersicht, um je nach Problem und Daten ein Modell auszuwählen.
+- [**PEP 8: Styleguide für Python-Code**](https://peps.python.org/pep-0008/): der Stil, dem dein Notebook folgen sollte.
+- [**Jupyter Notebooks in VS Code**](https://code.visualstudio.com/docs/datascience/jupyter-notebooks): wie man in VS Code Notebooks ausführt und einen Kernel auswählt.
+- [**uv-Dokumentation**](https://docs.astral.sh/uv/): der Paketmanager, der Python und die Abhängigkeiten dieses Repositorys verwaltet.
+- [**Zindi Competitions**](https://zindi.africa/competitions): Aufgaben aus der Praxis. Mehrere davon stehen in der Aufgabenstellung als Projektoptionen.

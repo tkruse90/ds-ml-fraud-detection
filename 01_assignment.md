@@ -1,99 +1,99 @@
-# Machine Learning Project: Assignment
+# Machine-Learning-Projekt: Aufgabenstellung
 
-This is your second project. As a team, you will take a real dataset from raw data to a working machine learning model and a stakeholder presentation. The aim is to practise the full data science lifecycle together: frame a problem, build a baseline, iterate with error analysis, and communicate your findings to a non-technical audience.
+Das ist euer zweites Projekt. Als Team bringt ihr einen echten Datensatz von den Rohdaten bis zu einem funktionierenden Machine-Learning-Modell und einer Präsentation für Stakeholder. Ziel ist, gemeinsam den gesamten Data-Science-Lebenszyklus zu üben: ein Problem formulieren, eine Baseline bauen, mit Fehleranalyse iterieren und eure Ergebnisse einem nicht-technischen Publikum vermitteln.
 
-This template repository is your starting point. It ships a configured environment and an example notebook that trains a simple model with minimal cleaning and feature selection. Treat it as scaffolding for your own project.
+Dieses Vorlagen-Repository ist euer Ausgangspunkt. Es enthält eine fertig eingerichtete Umgebung und ein Beispiel-Notebook, das mit minimaler Bereinigung und Feature-Auswahl ein einfaches Modell trainiert. Betrachtet es als Gerüst für euer eigenes Projekt.
 
-Work through the sections below in order: first choose a project, then plan it on a board, build and iterate, and finally prepare your deliverables.
+Arbeitet die folgenden Abschnitte der Reihe nach durch: Zuerst wählt ihr ein Projekt, dann plant ihr es auf einem Board, baut und iteriert, und zum Schluss bereitet ihr eure Abgaben vor.
 
-## Choose a Project
+## Ein Projekt wählen
 
-Pick one option as a team. Aim for a problem with a clear stakeholder and a clear business value.
+Wählt als Team eine Option. Sucht euch ein Problem mit klaren Stakeholdern und einem klaren geschäftlichen Nutzen.
 
-### Option A: Zindi challenge (Easy to Advanced)
+### Option A: Zindi-Challenge (leicht bis fortgeschritten)
 
-Choose one challenge on [Zindi](https://zindi.africa/competitions). Follow the requirements of the challenge, and also prepare a stakeholder presentation.
+Wählt eine Challenge auf [Zindi](https://zindi.africa/competitions). Erfüllt die Anforderungen der Challenge und bereitet zusätzlich eine Präsentation für Stakeholder vor.
 
-1. [Tanzania Tourism Prediction](https://zindi.africa/competitions/tanzania-tourism-prediction/data) (Easy, 2 people)
-2. [Fraud Detection in Electricity and Gas Consumption](https://zindi.africa/competitions/fraud-detection-in-electricity-and-gas-consumption-challenge) (Medium, has a starter notebook, 2 to 3 people)
-3. [Urban Air Pollution Challenge](https://zindi.africa/competitions/zindiweekendz-learning-urban-air-pollution-challenge) (Medium to Advanced, 3 people and some domain knowledge)
-4. [Flight Delay Prediction](https://zindi.africa/competitions/flight-delay-prediction-challenge) (Medium, 3 people; airport data via [airportsdata](https://pypi.org/project/airportsdata/))
-5. [Financial Inclusion in Africa](https://zindi.africa/competitions/financial-inclusion-in-africa) (Easy, 2 people)
+1. [Tanzania Tourism Prediction](https://zindi.africa/competitions/tanzania-tourism-prediction/data) (leicht, 2 Personen)
+2. [Fraud Detection in Electricity and Gas Consumption](https://zindi.africa/competitions/fraud-detection-in-electricity-and-gas-consumption-challenge) (Betrugserkennung beim Strom- und Gasverbrauch; mittel, mit Starter-Notebook, 2 bis 3 Personen)
+3. [Urban Air Pollution Challenge](https://zindi.africa/competitions/zindiweekendz-learning-urban-air-pollution-challenge) (mittel bis fortgeschritten, 3 Personen und etwas Fachwissen)
+4. [Flight Delay Prediction](https://zindi.africa/competitions/flight-delay-prediction-challenge) (mittel, 3 Personen; Flughafendaten über [airportsdata](https://pypi.org/project/airportsdata/))
+5. [Financial Inclusion in Africa](https://zindi.africa/competitions/financial-inclusion-in-africa) (leicht, 2 Personen)
 
-### Option B: Kickstarter project success (Medium)
+### Option B: Erfolg von Kickstarter-Projekten (mittel)
 
-In recent years, the range of funding options for projects created by individuals and small companies has expanded considerably. Alongside savings, bank loans, and friends and family funding, crowdfunding has become a popular and readily available alternative.
+In den letzten Jahren sind die Finanzierungsmöglichkeiten für Projekte von Einzelpersonen und kleinen Unternehmen deutlich vielfältiger geworden. Neben Ersparnissen, Bankkrediten und Geld von Freunden und Familie hat sich Crowdfunding zu einer beliebten und leicht zugänglichen Alternative entwickelt.
 
-Kickstarter, founded in 2009, is a well-known crowdfunding platform. It uses an all-or-nothing funding model: a project is only funded if it meets its goal amount, otherwise backers give no money to the project.
+Kickstarter, gegründet 2009, ist eine bekannte Crowdfunding-Plattform. Sie arbeitet nach dem Alles-oder-nichts-Prinzip: Ein Projekt wird nur finanziert, wenn es seinen Zielbetrag erreicht. Andernfalls zahlen die Unterstützer dem Projekt kein Geld.
 
-Many factors contribute to the success or failure of a project, in general and also on Kickstarter. Some of these can be quantified or categorised, which makes it possible to build a model that predicts whether a project will succeed. The aim of this project is to build such a model and to analyse Kickstarter project data more generally, so you can help potential creators assess whether Kickstarter is a good funding option for them and what their chances of success are.
+Viele Faktoren tragen zum Erfolg oder Misserfolg eines Projekts bei, allgemein und auch auf Kickstarter. Einige davon lassen sich messen oder in Kategorien einteilen. Damit lässt sich ein Modell bauen, das vorhersagt, ob ein Projekt erfolgreich sein wird. Ziel dieses Projekts ist, ein solches Modell zu bauen und die Daten der Kickstarter-Projekte allgemein zu analysieren. So könnt ihr potenziellen Projektgründern helfen einzuschätzen, ob Kickstarter eine gute Finanzierungsoption für sie ist und wie ihre Erfolgschancen stehen.
 
-Data: [Kickstarter Projects on Kaggle](https://www.kaggle.com/datasets/kemical/kickstarter-projects).
+Daten: [Kickstarter Projects auf Kaggle](https://www.kaggle.com/datasets/kemical/kickstarter-projects).
 
-### Option C: Other tabular datasets (Kaggle)
+### Option C: Andere tabellarische Datensätze (Kaggle)
 
-Structured, tabular datasets from real companies with a clear business case. Choose a regression or a classification problem.
+Strukturierte, tabellarische Datensätze von echten Unternehmen mit einem klaren Business Case. Wählt ein Regressions- oder ein Klassifikationsproblem.
 
-**Regression (continuous target):**
+**Regression (stetige Zielvariable):**
 
-- [Zillow Prize: Home Value Prediction](https://www.kaggle.com/competitions/zillow-prize-1): predict the log error between Zillow's automated price estimate and the actual sale price. Target: `logerror`.
-- [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/competitions/mercedes-benz-greener-manufacturing): predict the time a car takes on the test bench from its configuration. Target: testing time (`y`).
-- [Santander Value Prediction Challenge](https://www.kaggle.com/competitions/santander-value-prediction-challenge): predict a continuous customer value score from anonymised data. Target: `target`.
-- [Allstate Claims Severity](https://www.kaggle.com/competitions/allstate-claims-severity): predict the cost of insurance claims. Target: `loss`.
-- [Expedia Hotel Recommendations](https://www.kaggle.com/competitions/expedia-hotel-recommendations) (regression variant): predict the likelihood of a user booking a hotel cluster.
+- [Zillow Prize: Home Value Prediction](https://www.kaggle.com/competitions/zillow-prize-1): den logarithmischen Fehler zwischen Zillows automatischer Preisschätzung und dem tatsächlichen Verkaufspreis vorhersagen. Zielvariable: `logerror`.
+- [Mercedes-Benz Greener Manufacturing](https://www.kaggle.com/competitions/mercedes-benz-greener-manufacturing): aus der Konfiguration eines Autos vorhersagen, wie lange es auf dem Prüfstand braucht. Zielvariable: Testdauer (`y`).
+- [Santander Value Prediction Challenge](https://www.kaggle.com/competitions/santander-value-prediction-challenge): aus anonymisierten Daten einen stetigen Kundenwert vorhersagen. Zielvariable: `target`.
+- [Allstate Claims Severity](https://www.kaggle.com/competitions/allstate-claims-severity): die Kosten von Versicherungsschäden vorhersagen. Zielvariable: `loss`.
+- [Expedia Hotel Recommendations](https://www.kaggle.com/competitions/expedia-hotel-recommendations) (Regressionsvariante): die Wahrscheinlichkeit vorhersagen, dass ein Nutzer einen Hotel-Cluster bucht.
 
-**Classification (categorical target):**
+**Klassifikation (kategoriale Zielvariable):**
 
-- [Porto Seguro Safe Driver Prediction](https://www.kaggle.com/competitions/porto-seguro-safe-driver-prediction): predict whether a driver will file a claim next year. Target: binary.
-- [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction): predict which customers will make a specific transaction. Target: binary.
-- [Expedia Hotel Recommendations](https://www.kaggle.com/competitions/expedia-hotel-recommendations): classify which hotel cluster a user is most likely to book. Target: multi-class (`hotel_cluster`).
-- [Avito Demand Prediction](https://www.kaggle.com/competitions/avito-demand-prediction): predict whether an advert will be successful (demand). Target: classification.
-- [Home Credit Default Risk](https://www.kaggle.com/competitions/home-credit-default-risk): predict whether a loan applicant will default. Target: binary (`TARGET`).
+- [Porto Seguro Safe Driver Prediction](https://www.kaggle.com/competitions/porto-seguro-safe-driver-prediction): vorhersagen, ob ein Fahrer im nächsten Jahr einen Schaden meldet. Zielvariable: binär.
+- [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction): vorhersagen, welche Kunden eine bestimmte Transaktion durchführen werden. Zielvariable: binär.
+- [Expedia Hotel Recommendations](https://www.kaggle.com/competitions/expedia-hotel-recommendations): klassifizieren, welchen Hotel-Cluster ein Nutzer am wahrscheinlichsten bucht. Zielvariable: mehrere Klassen (`hotel_cluster`).
+- [Avito Demand Prediction](https://www.kaggle.com/competitions/avito-demand-prediction): vorhersagen, ob eine Anzeige erfolgreich sein wird (Nachfrage). Zielvariable: Klassifikation.
+- [Home Credit Default Risk](https://www.kaggle.com/competitions/home-credit-default-risk): vorhersagen, ob ein Kreditantragsteller zahlungsunfähig wird. Zielvariable: binär (`TARGET`).
 
-## Timeline and Milestones
+## Zeitplan und Meilensteine
 
-The project runs over four days. Track your progress on a GitHub Kanban board. The board setup is described in [02_kanban_board.md](02_kanban_board.md).
+Das Projekt läuft über vier Tage. Verfolgt euren Fortschritt auf einem Kanban-Board in GitHub. Wie ihr das Board einrichtet, steht in [02_kanban_board.md](02_kanban_board.md).
 
-| Milestone | What it is | Target |
+| Meilenstein | Was es ist | Ziel |
 | --- | --- | --- |
-| Milestone 0 | Data Ingestion  | Day 1, 12:00 |
-| Milestone 1 | EDA  | Day 2, 12:00 |
-| Milestone 2 | First model, the baseline | Day 3, 12:00 |
-| Milestone 3 | A model with error analysis | Day 4, 12:00 |
-| Milestone 4 | Final deliverables and presentation | Day 5, 14:00 |
+| Meilenstein 0 | Daten einlesen (Data Ingestion) | Tag 1, 12:00 |
+| Meilenstein 1 | EDA | Tag 2, 12:00 |
+| Meilenstein 2 | Erstes Modell, die Baseline | Tag 3, 12:00 |
+| Meilenstein 3 | Ein Modell mit Fehleranalyse | Tag 4, 12:00 |
+| Meilenstein 4 | Finale Abgaben und Präsentation | Tag 5, 14:00 |
 
-For each milestone, write two things in the GitHub issue:
+Schreibt für jeden Meilenstein zwei Dinge in das GitHub-Issue:
 
-1. What needs to be completed to be done with the milestone.
-2. The definition of done: what your result looks like when the milestone is complete.
+1. Was erledigt sein muss, damit der Meilenstein abgeschlossen ist.
+2. Die Definition of Done: wie euer Ergebnis aussieht, wenn der Meilenstein abgeschlossen ist.
 
-### Baseline model example (Milestone 1)
+### Beispiel für ein Baseline-Modell (Meilenstein 2)
 
-A baseline is the simplest thing that could work. It gives you a score to beat. For example, for a fraud detection project:
+Eine Baseline ist das Einfachste, das funktionieren könnte. Sie liefert euch einen Wert, den ihr schlagen müsst. Zum Beispiel für ein Projekt zur Betrugserkennung:
 
-- **Value of the product:** find fraudulent transactions, save money, avoid reputation damage, and prevent money laundering.
-- **Prediction:** whether a transaction is fraudulent.
-- **Evaluation metric:** F1 score. We want to minimise losses through fraud and at the same time avoid falsely accusing customers (and perhaps losing them). Both false positives and false negatives have strong negative effects, so a balanced metric like the F1 score fits.
-- **Baseline model:** assume transactions that happen at midnight are likely to be fraudulent.
-- **Score:** F1 score = 0.1.
+- **Nutzen des Produkts:** betrügerische Transaktionen finden, Geld sparen, Rufschäden vermeiden und Geldwäsche verhindern.
+- **Vorhersage:** ob eine Transaktion betrügerisch ist.
+- **Bewertungsmetrik:** F1-Score. Wir wollen Verluste durch Betrug minimieren und gleichzeitig vermeiden, Kunden fälschlich zu beschuldigen (und sie dadurch vielleicht zu verlieren). Sowohl falsch-positive als auch falsch-negative Vorhersagen haben starke negative Folgen, darum passt eine ausgewogene Metrik wie der F1-Score.
+- **Baseline-Modell:** Annahme, dass Transaktionen um Mitternacht wahrscheinlich betrügerisch sind.
+- **Score:** F1-Score = 0.1.
 
-## Things to Think About
+## Worüber ihr nachdenken solltet
 
-As you build and iterate on your models, keep these in mind:
+Behaltet beim Bauen und Weiterentwickeln eurer Modelle Folgendes im Kopf:
 
-- Check for data imbalance.
-- What is the right performance metric for your problem: precision, recall, accuracy, F1 score, or something else? (Consider the true positive rate.)
-- Try at least three different machine learning algorithms to see which performs best, including cross validation and hyperparameter tuning.
+- Prüft, ob die Daten unausgewogen (imbalanced) sind.
+- Welche Bewertungsmetrik passt zu eurem Problem: Precision, Recall, Accuracy, F1-Score oder etwas anderes? (Denkt an die True Positive Rate.)
+- Probiert mindestens drei verschiedene Machine-Learning-Algorithmen aus, um zu sehen, welcher am besten abschneidet, einschließlich Cross-Validation und Hyperparameter-Tuning.
 
-## Final Deliverables
+## Finale Abgaben
 
-1. A slide deck (PDF, pushed to GitHub) designed for non-technical stakeholders that outlines your findings, recommendations, and future work. This supports a 10 minute presentation.
-2. A Jupyter notebook following PEP 8, designed for a data science and technical audience. The notebook should be well documented and reproducible, with a clear narrative and visualisations that support your findings. It should be pushed to GitHub.
-3. One slide about a potential data product: how could the predictions be used?
+1. Eine Foliensammlung (PDF, auf GitHub gepusht) für nicht-technische Stakeholder, die eure Ergebnisse, Empfehlungen und mögliche nächste Schritte darstellt. Sie begleitet eine 10-minütige Präsentation.
+2. Ein Jupyter Notebook nach PEP 8 für ein Data-Science- und technisches Publikum. Das Notebook sollte gut dokumentiert und reproduzierbar sein, einen klaren roten Faden haben und Visualisierungen enthalten, die eure Ergebnisse stützen. Es sollte auf GitHub gepusht werden.
+3. Eine Folie zu einem möglichen Datenprodukt: Wie könnten die Vorhersagen genutzt werden?
 
-## Resources
+## Ressourcen
 
-If your dataset is imbalanced, these are useful starting points:
+Wenn euer Datensatz unausgewogen ist, sind das nützliche Einstiegspunkte (auf Englisch):
 
 - [8 Tactics to Combat Imbalanced Classes](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 - [Random Oversampling and Undersampling for Imbalanced Classification](https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/)
